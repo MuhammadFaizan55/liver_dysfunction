@@ -8,7 +8,7 @@ st.set_page_config(page_title='ALT Detection Sys',page_icon='h1.jpeg',layout="ce
 st.markdown("""# **welcome to Liver dysfunction detection app**""")
 
 # Load the models
-render_model = joblib.load("render.joblib")
+render_model = joblib.load("render1.joblib")
 
 def hide_streamlit_style():
    
