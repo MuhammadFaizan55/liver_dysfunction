@@ -1,20 +1,19 @@
 import streamlit as st
+import seaborn as sns
 import numpy as np
 import pandas as pd
 import joblib
 import sklearn 
 #title of page
 st.set_page_config(page_title='ALT Detection Sys',page_icon='h1.jpeg',layout="centered")
-st.markdown("""# **welcome to ALT Detection Sys**""")
+st.markdown("""# **welcome to Liver dysfunction detection app**""")
 
 # Load the models
 render_model = joblib.load("render.joblib")
 
 def hide_streamlit_style():
    
-
-    
-
+   
     hide_footer_style = """
         <style>
         .reportview-container .main footer {
