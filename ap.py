@@ -44,7 +44,7 @@ def predict_disease(Gender, age, Total_Bilirubin, Direct_Bilirubin, Alkphos_Alka
     prediction = render_model.predict(input_data)[0]
 
     if prediction is not None:
-        result = "Positive" if prediction == 1 else "Negative"
+        result = "Positive" if prediction == 0 else "Negative"
     else:
         result = "Invalid disease selection"
     
